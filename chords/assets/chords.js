@@ -40,7 +40,7 @@
     inp.addEventListener('input', run); flat.addEventListener('change', run); run();
   }
   function init() {
-    var go = $('#cf-go'); if (go) go.addEventListener('click', function () { location.href = '/' + $('#cf-root').value + '-' + $('#cf-type').value + '/'; });
+    var go = $('#cf-go'); if (go) go.addEventListener('click', function () { location.href = '/chords/' + $('#cf-root').value + '-' + $('#cf-type').value + '/'; });
     d.addEventListener('click', function (e) { var b = e.target.closest('[data-chord]'); if (b) { e.preventDefault(); play(b.getAttribute('data-chord').split(',').map(Number)); } });
     transposer();
   }
