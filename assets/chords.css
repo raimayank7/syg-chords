@@ -1,0 +1,21 @@
+/* Chords: chord boxes, keyboard diagrams, figure rows, transposer */
+.cfs{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));margin:14px 0;align-items:start}
+.cf{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px;text-align:center}
+.cf svg{display:block;margin:0 auto;height:auto;max-width:100%}
+.cf svg.cb{width:150px}.cf svg.kb{width:100%;max-width:422px}
+.cf figcaption{display:flex;flex-direction:column;gap:5px;align-items:center;font-size:.9rem;font-weight:600;margin-top:6px}
+.cf figcaption .mono{font-weight:500;font-size:.84rem;color:var(--soft)}
+.cf:has(.kb){grid-column:1/-1}
+a.cfl{text-decoration:none;color:var(--ink);display:block}a.cfl:hover .cf{border-color:var(--accent);box-shadow:var(--shadow)}
+.cb .st,.cb .fr{stroke:var(--ink);stroke-width:1.4;fill:none}.cb .nut{stroke:var(--ink);stroke-width:5;fill:none}
+.cb .dot{fill:var(--ink)}.cb .br{fill:var(--ink)}.cb .op{fill:none;stroke:var(--ink);stroke-width:1.8}
+.cb text{font-family:var(--font);fill:var(--ink)}.cb .mk{font-size:17px;text-anchor:middle;dominant-baseline:central}.cb .fn{font-size:12px;font-weight:600}
+.kb .wk{fill:#fff;stroke:#333;stroke-width:1.2}.kb .bk{fill:#222;stroke:#111}
+.kb .wk.on{fill:#d9f2e3}.kb .bk.on{fill:#0e7a40}.kb .kd{fill:#0e7a40}.kb .kd.b{fill:#fff}
+.az.big a{min-width:48px;min-height:48px;font-size:1.05rem}
+.next{color:var(--soft)}
+textarea{width:100%;min-height:76px;padding:10px 12px;font:500 1.05rem var(--mono);color:var(--ink);background:var(--field);border:1px solid var(--field-line);border-radius:10px}
+.tp-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.tp-row output{font-weight:700;min-width:8.5em;text-align:center}
+.tp-flat{display:flex!important;gap:8px;align-items:center;font-weight:400!important;margin:0!important;min-height:40px}.tp-flat input{width:20px;height:20px}
+@media print{.cf button,.finder{display:none!important}}
