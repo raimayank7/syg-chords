@@ -1,4 +1,4 @@
-/* chords.shareyourgroup.com: chord finder, "hear this chord" (plain tones made by the browser) and the transposing tool. Nothing is sent anywhere. */
+/* chords.shareyourgroup.com/chords: chord finder, "hear this chord" (plain tones made by the browser) and the transposing tool. Nothing is sent anywhere. */
 (function () {
   'use strict';
   var d = document, ctx = null;
